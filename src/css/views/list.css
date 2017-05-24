@@ -1,0 +1,7 @@
+.list {
+    color: red;
+    background: url("../../images/bj.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: 100% 100%;
+}
