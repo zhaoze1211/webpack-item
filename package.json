@@ -5,11 +5,14 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server":"webpack-dev-server"
+    "server": "webpack-dev-server"
   },
   "author": "zhaoze",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.2",
     "extract-text-webpack-plugin": "^2.1.0",

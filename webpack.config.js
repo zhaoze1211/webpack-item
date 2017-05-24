@@ -31,6 +31,11 @@ var config = {
                 use: ["html-loader"]
             },
             {
+                test: /\.js$/,
+                use: ["babel-loader?presets[]=es2015"],
+                exclude: /(node_modules|dist)/
+            },
+            {
                 test: /\.(woff|woff2|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: 'file-loader?name=fonts/[name].[ext]'
             },
@@ -53,6 +58,7 @@ var config = {
     resolve: {
         extensions: [".js", ".json", "css", "less"]
     },
+    devtool: "source-map",
     devServer: {
         contentBase: __dirname + "dist",
         compress: true,
